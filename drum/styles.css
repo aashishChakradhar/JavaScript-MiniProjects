@@ -1,0 +1,91 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: #1c4891;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+footer{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: auto;   
+    margin-bottom: 3rem;
+}
+.title-text{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 5rem 0rem;
+    padding: 1rem 0rem;
+    /* border: black solid 5px; */
+}
+.keys{
+    /* border: black solid 5px; */
+    text-align: center;
+    padding: 1rem 0rem;
+    margin: 5rem 0rem;
+}
+.drum-button{
+    color: black;
+    font-size: large;
+    font-weight: 900;
+    height: 5rem;
+    width: 5rem;
+    border: transparent;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0rem;
+    overflow: hidden;
+
+    background-size: cover; /* Ensure the image covers the button area */
+    background-position: center; /* Center the image */
+    font-size: 1.5rem; /* Adjust the font size if needed */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+.pressed{
+    border: black 2px solid;
+    height : 5.8rem;
+    width : 5.8rem;
+    opacity: 60%;
+    color: gray;
+}
+#crash {
+    background-image: url('images/crash.png');
+}
+
+#kick-bass {
+    background-image: url('images/kick.png');
+}
+
+#snare {
+    background-image: url('images/snare.png');
+}
+
+#tom-1 {
+    background-image: url('images/tom1.png');
+}
+
+#tom-2 {
+    background-image: url('images/tom2.png');
+}
+
+#tom-3 {
+    background-image: url('images/tom3.png');
+}
+
+#tom-4 {
+    background-image: url('images/tom4.png');
+}

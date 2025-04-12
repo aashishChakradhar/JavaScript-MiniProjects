@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Roll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">Dice Roll</div>
+    <div class="player-num">Players: 
+        <select name="players" id="players" onchange="numberOfPlayers()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+    </div>
+    <div class="whole">
+        <div class="single">
+            <div class="display-text">Player 1</div>
+        <img class="dice" src="images/dice1.png" alt="dice">
+        <div class="score display-text">Score: 0</div>
+        </div>
+    </div>
+    <div class="center-button">
+        <button onClick="diceRoll()">Roll Dice</button>
+    </div>
+    
+    <footer>
+        &copy;Copyright 2025 | Aashish Chakradhar
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
