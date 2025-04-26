@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="title">Simon</div>
+        <div class="statusBar">
+            <div class="difficulty">Difficulty: 
+                <select name="level" id="dropdown" onchange="displayScore('reset')">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="load">Get Pattern!</div>
+            <div class="score">
+                <div>High Score: <span id="highScore">0</span></div>
+                <div>Current Score: <span id="currentScore">0</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <div class="button-container">
+        <button id="startButton" class="button" onClick="gameStart()">Get Pattern</button>
+        <button id="submitButton" class="button" onClick="gameSubmit()" style="display: none;">Submit</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

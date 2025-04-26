@@ -1,0 +1,105 @@
+:root{
+    --color1:#8F87F1;
+    --color2:#C68EFD;
+    --color3:#E9A5F1;
+    --color4:#FED2E2;
+    --color5:#FfD2E2;
+    --color6:purple;
+}
+
+body{
+    background-color:var(--color2);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align the buttons vertically */
+    gap: 1rem; /* Add spacing between the buttons */
+    margin-top: 1rem; /* Add some margin above the container */
+}
+.button{
+    flex: 0 0 auto; /* Ensure buttons don't stretch */
+    text-align: center;
+    height: 3rem;
+    min-width: 10rem;
+    border-radius: 14px;
+    background-color: var(--color5);
+    color:var(--color6);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.title{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--color4);
+}
+
+.box-container{
+    text-align: center;
+    /* width: 25rem; */
+}
+
+.box{
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    margin: 1.5rem;
+    border-radius: 14px;
+    border: black solid 2px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: green;
+}
+.highlight{
+    width: 11.5rem;
+    height: 11.5rem;
+    border: black solid 3px;
+    opacity: 110%;
+}
+.statusBar{
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Vertically align items */
+
+    /* text-align: center;
+    justify-content: center; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: .5rem;
+    padding-inline:5rem;
+    height: 3rem;
+    color: var(--color6);
+}
+.statuBar {
+    
+    padding: 10px; /* Add some padding */
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    border: 1px solid #ccc; /* Optional: Add a border */
+}
+
+.statusBar .difficulty {
+    text-align: left; /* Align text to the left */
+    flex: 1; /* Take up equal space */
+}
+
+.statusBar .load {
+    text-align: center; /* Align text to the center */
+    flex: 1; /* Take up equal space */
+}
+
+.statusBar .score {
+    text-align: right; /* Align text to the right */
+    flex: 1; /* Take up equal space */
+}
